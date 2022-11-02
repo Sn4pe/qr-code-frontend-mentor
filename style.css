@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --ligt-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 1px);
+    background: var(--ligt-gray);
+    font-family: Outfit, sans-serif;
+}
+
+body p {
+    font-size: 15px;
+}
+
+#card {
+    margin: 2.6em;
+    width: 20em;
+    padding: 1em;
+    background: var(--white);
+    border-radius: 1em;
+    box-shadow: -9px 16px 29px -15px rgba(0, 0, 0, 0.13);
+}
+
+#card img {
+    width: 100%;
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+}
+
+#card h2 {
+    margin: 0.3em auto;
+    width: 86%;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+#card p {
+    margin: 20px auto;
+    width: 80%;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        height: 100vh;
+    }
+
+    #card {
+        margin: 1em;
+        width: 75%;
+    }
+
+    #card h2 {
+        width: 100%;
+    }
+
+    #card p {
+        width: 90%;
+    }
+}
